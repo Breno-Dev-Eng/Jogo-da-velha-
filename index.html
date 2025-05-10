@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.html" defer></script>
+</head>
+<body>
+    <h1 id="title">Jogo da Velha</h1>
+    <header>
+        <form id="container-form" >
+            <div class="container1">
+                <label for="name1" id="label1">Digite o nome do jogador numero 1:</label>
+                <input type="text" id="player1" placeholder="Ex: Breno">
+                
+            </div>
+            <button id="start">Começar</button>
+            <div class="container2">
+            <label for="name2" id="label2">Digite o nome do jogador numero 2:</label>
+            <input type="text" id="player2" placeholder="Ex: Igor"> 
+            </div>    
+        </form> 
+        <div class="container-vez">
+            <h2>Vez de: <span id="turnPlayer"></span></h2>
+        </div>
+    </header>
+    
+    <main id="container">
+        <div id="tabuleiro">
+            <section id="gameBoard">
+                <span class="cursor-pointer" data-region="0.0"></span>
+                <span class="cursor-pointer" data-region="0.1"></span>
+                <span class="cursor-pointer" data-region="0.2"></span>
+                <span class="cursor-pointer" data-region="1.0"></span>
+                <span class="cursor-pointer" data-region="1.1"></span>
+                <span class="cursor-pointer" data-region="1.2"></span>
+                <span class="cursor-pointer" data-region="2.0"></span>
+                <span class="cursor-pointer" data-region="2.1"></span>
+                <span class="cursor-pointer" data-region="2.2"></span>
+              </section>
+            
+        </div>
+    </main>
+    <button id="refresh">Recomeçar</button>
+</body>
+</html>
