@@ -115,3 +115,22 @@ refresh.addEventListener('click', () => {
  vBoard = [['', '', ''], ['', '', ''], ['', '', '']]
  turnPlayer = ''
 })
+
+const main = document.querySelector("body");
+const root = document.documentElement;
+
+document.getElementById("themeSwitcher").addEventListener("click", function () {
+    if (main.dataset.theme === "dark") {
+      root.style.setProperty("--bg-color", "#f1f5f9")
+      root.style.setProperty("--border-color", "#aaa")
+      root.style.setProperty("--font-color", "")
+      root.style.setProperty("--primary-color", "#26834a")
+      main.dataset.theme = "light"
+    } else {
+      root.style.setProperty("--bg-color", "")
+      root.style.setProperty("--border-color", "#666")
+      root.style.setProperty("--font-color", "")
+      root.style.setProperty("--primary-color", "#")
+      main.dataset.theme = "dark"
+    }
+  })
